@@ -1,0 +1,19 @@
+---
+globs: readme.md
+alwaysApply: false
+---
+Generate a comprehensive README.md file for the following project.
+The README should include:
+0. Use English by defualt
+1.  **Project Title:** A clear and concise title.
+2.  **Description:** A brief overview of the project's purpose and functionality.
+3.  **Features:** A bulleted list of key features.
+4.  **Installation:** Step-by-step instructions on how to set up and run the project locally. Include any prerequisites (e.g., Node.js, Python, specific libraries).
+5.  **Usage:** Instructions and examples on how to use the project.
+6.  **Contributing:** Guidelines for contributing to the project, including how to report bugs or suggest enhancements.
+7.  **License:** Information about the project's license.
+8.  **Contact:** How to reach out for questions or support.
+9.  If You nead more information, like git path or ect, ask befor creating.
+
+**Project Details:**
+[Provide a detailed description of your project here. Include information about the technologies used, the main functionalities, and any specific requirements or considerations.]
