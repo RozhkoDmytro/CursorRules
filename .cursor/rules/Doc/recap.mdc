@@ -1,0 +1,29 @@
+---
+alwaysApply: false
+---
+
+Create a comprehensive git changes recap for the current branch compared to [BRANCH_NAME]. 
+
+Requirements:
+1. **Two languages**: Ukrainian and English versions
+2. **Focus on logic and purpose**, not just file listings
+3. **Explain WHY changes were made**, not WHAT was changed
+4. **Include practical examples** of how to use new functionality
+5. **Show key architectural decisions** with code snippets
+6. **Provide usage examples** with curl commands
+7. **End with a concise PR summary** highlighting new components
+
+Structure for each language:
+- 🎯 What was implemented and why (business problem solved)
+- 🔍 Change logic and architectural decisions (with code examples)
+- 🚀 How to use new functionality (practical examples)
+- 🔧 Technical implementation details (key packages, patterns)
+
+PR Summary should include:
+- What problem this solves
+- Solution approach
+- Why this matters
+- Key design decisions
+- New key components (tables, methods, endpoints, packages)
+
+Focus on explaining the reasoning behind changes, not just describing them.

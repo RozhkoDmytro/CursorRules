@@ -1,0 +1,17 @@
+---
+alwaysApply: false
+---
+split changed files by logical structure, push them into git and add short, but complex comments.
+
+- Always branch off from `dev` when starting new work: `git checkout dev && git pull && git checkout -b feature/<name>`.
+- Never branch directly from `main` or `master`.
+- Commit messages must follow Conventional Commits format: `<type>: <description>` (e.g. `feat: add profile settings page`).
+- Allowed commit types: `feat`, `fix`, `chore`, `docs`, `refactor`, `test`, `style`.
+- Before pushing, always sync with `dev` using `git pull --rebase origin dev`.
+- Push only with `git push origin <current-branch>`.
+- Block direct pushes to `main`, `master`, or `dev`. Use Pull Requests instead.
+- When opening a Pull Request, always set **base branch = `dev`**.
+- Title of PR should follow the same format as commit messages. Example: `feat: add password reset flow`.
+- If conflicts with `dev` occur, stop and require manual resolution before continuing.
+- Force push (`git push --force`) requires explicit user confirmation.
+- After successful push, display: branch name, target PR branch (`dev`), number of commits, and remote URL.

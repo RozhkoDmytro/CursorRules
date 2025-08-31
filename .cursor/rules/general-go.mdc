@@ -1,0 +1,12 @@
+---
+globs: *.go
+alwaysApply: false
+---
+- Follow idiomatic Go / GoLang patterns and project structure.
+- USE SOLID, DRY, YAGNI, KISS principles.
+- Present findings using the pre-implementation checklist.
+- Avoid new files if similar functionality exists.
+- Check for `internal`, `pkg`, or `utils` folders before creating helpers.
+- Justify any third-party dependency over stdlib.
+- Document reused packages before adding new logic.
+- Don't summerize self work unless explicitly requested.
