@@ -2,28 +2,22 @@
 alwaysApply: false
 ---
 
-Create a comprehensive git changes recap for the current branch compared to [BRANCH_NAME]. 
+* Generate a git changes recap for the current branch compared to \[BRANCH\_NAME].
+* Work commit-first: treat each commit as one feature; merge only if commits clearly belong to the same task.
+* For each feature, always produce four sections (content in English only):
 
-Requirements:
-1. **Two languages**: Ukrainian and English versions
-2. **Focus on logic and purpose**, not just file listings
-3. **Explain WHY changes were made**, not WHAT was changed
-4. **Include practical examples** of how to use new functionality
-5. **Show key architectural decisions** with code snippets
-6. **Provide usage examples** with curl commands
-7. **End with a concise PR summary** highlighting new components
+  1. 🎯 What was implemented and why — describe the business problem and result in 2–3 sentences.
+  2. 🔍 Change logic and architectural decisions — 1–3 bullets with short code snippets (≤6 lines) plus rationale.
+  3. 🚀 How to use (examples) — CLI/UI/API usage examples. For APIs, always include curl with method, URL, headers, minimal JSON, and expected status.
+  4. 🔧 Technical details — bullets covering endpoints, DB schema/migrations, events/queues/crons, feature flags, roles/permissions, env vars, caching, retries/timeouts, key packages.
+* Enforce concise style: each bullet ≤12 words, no filler or vague adjectives.
+* Never output file listings or raw diffs; reference files only when needed for logic explanation.
+* If a fact is missing, output "N/A" instead of guessing.
+* End with a **PR Summary (EN)** containing exactly five bullets:
 
-Structure for each language:
-- 🎯 What was implemented and why (business problem solved)
-- 🔍 Change logic and architectural decisions (with code examples)
-- 🚀 How to use new functionality (practical examples)
-- 🔧 Technical implementation details (key packages, patterns)
-
-PR Summary should include:
-- What problem this solves
-- Solution approach
-- Why this matters
-- Key design decisions
-- New key components (tables, methods, endpoints, packages)
-
-Focus on explaining the reasoning behind changes, not just describing them.
+  1. Problem — one line.
+  2. Approach — one line.
+  3. New components — comma-separated list.
+  4. Risks and mitigations — one line.
+  5. Testing and verification — one line.
+* Keep recap scannable: prefer bullets, limit paragraphs to ≤3 sentences.

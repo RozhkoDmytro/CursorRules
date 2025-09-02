@@ -132,3 +132,4 @@ For questions, suggestions, or support:
 ---
 
 > 💡 **Tip:** These rules are designed to work with Cursor IDE's AI features. For best results, ensure you're using the latest version of Cursor IDE.
+

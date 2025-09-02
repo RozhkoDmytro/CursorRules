@@ -1,12 +1,14 @@
 ---
 globs: *.go
 alwaysApply: false
+reason: code standarts
 ---
-- Follow idiomatic Go / GoLang patterns and project structure.
-- USE SOLID, DRY, YAGNI, KISS principles.
-- Present findings using the pre-implementation checklist.
-- Avoid new files if similar functionality exists.
-- Check for `internal`, `pkg`, or `utils` folders before creating helpers.
-- Justify any third-party dependency over stdlib.
-- Document reused packages before adding new logic.
-- Don't summerize self work unless explicitly requested.
+Before add new code, chek this:
+1. USE SOLID principles.
+2. USE DRY principles.
+3. USE YAGNI principles.
+4. USE KISS principles.
+5. USE Go, GoLang patterns and best practice.
+6. Use lowercase alias and packages naming.
+7. Alwayes wrap error in fmt.Errorf for good stack.
+8. Interface and realisation must be in the same file.
